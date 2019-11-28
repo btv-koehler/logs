@@ -121,7 +121,7 @@ class Filter
     }
 
     /**
-     * @param int|null $fromTime
+     * @param int $fromTime
      */
     public function setFromTime(int $fromTime = null)
     {
@@ -137,7 +137,7 @@ class Filter
     }
 
     /**
-     * @param int|null $toTime
+     * @param int $toTime
      */
     public function setToTime(int $toTime = null)
     {
