@@ -125,7 +125,11 @@ class Log
      */
     public function getReadableLevel(): string
     {
-        return LogLevel::getInternalName($this->level);
+        if (version_compare(TYPO3_version, '10.0.0') >= 0) {
+            return LogLevel::getInternalName($this->level);
+        }
+        else
+            return LogLevel::getName($this->level);
     }
 
     /**
